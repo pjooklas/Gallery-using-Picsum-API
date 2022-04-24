@@ -1,11 +1,10 @@
 'use strict';
 const leftPane = document.querySelector('.left-side');
 const rightPane = document.querySelector('.right-side');
-const pageNumber = 1;
+let pageNumber = 1;
 const itemsPerPage = 30;
 const baseURL = 'https://picsum.photos/id/';
 
-// Fetch photo list from API
 const fetchImageList = (pageNumber, itemsPerPage) => {
     fetch(`https://picsum.photos/v2/list?page=${pageNumber}&limit=${itemsPerPage}`)
         .then(response => response.json())
