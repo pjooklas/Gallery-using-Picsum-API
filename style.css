@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 220px auto;
+}
+
+.left-side {
+    height: 100vh;
+    width: 220px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.left-side img {
+    height: 200px;
+    width: 200px;
+}
