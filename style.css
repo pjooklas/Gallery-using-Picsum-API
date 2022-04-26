@@ -17,12 +17,14 @@
     scrollbar-width: thin;
 }
 
-iframe {
-    height: 100%;
-    width: 100%;
-}
-
 .left-side img {
     height: 200px;
     width: 200px;
+}
+
+.right-side {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto 100px;
 }

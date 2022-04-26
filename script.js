@@ -15,7 +15,7 @@ const fetchImageList = (pageNumber, itemsPerPage) => {
                 img.setAttribute('src', baseURL + element.id + '/200/200');
                 img.setAttribute('id', element.id);
                 aTag.setAttribute('href', element.download_url);
-                aTag.setAttribute('target', "right-side");
+                aTag.setAttribute('target', "enlarged-image");
                 aTag.appendChild(img);
                 leftPane.appendChild(aTag);
             });
