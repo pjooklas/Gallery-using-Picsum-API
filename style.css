@@ -10,6 +10,13 @@
     grid-template-columns: 220px auto;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .left-side {
     height: 100vh;
     width: 220px;
@@ -24,7 +31,18 @@
 
 .right-side {
     height: 100%;
-    width: 100%;
+    width: auto;
     display: grid;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.enlarged-image {
+    pointer-events: none;
+}
+
+.enlarged-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
 }
